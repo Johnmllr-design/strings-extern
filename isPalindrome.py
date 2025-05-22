@@ -2,16 +2,16 @@
 
 s = input("give me a string:")
 
-low = 0
-high = len(s) - 1
-isPal = True
+low = 0                             # low pointer
+high = len(s) - 1                   # high pointer
+isPal = True                        # initially the palindrome is true
 while low <= high:
     if s[low] != s[high]:                       # if not a palindrome
         isPal = False
         break
     else:
-        low += 1
-        high -= 1
+        low += 1                    # check next pointer
+        high -= 1                   # check next pointer
 
 if isPal:
     print("yes! " + s + " is a palindrome!")        # good case
